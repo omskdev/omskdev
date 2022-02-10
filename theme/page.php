@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary">
+	<main id="primary" class="container relative mx-auto px-4">
 
 		<?php
 		while ( have_posts() ) :

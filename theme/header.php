@@ -22,10 +22,10 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="bg-gray-50">
+<div id="page" class="bg-gray-100">
 	<a href="#primary" class="sr-only focus:not-sr-only"><?php esc_html_e('Skip to content', 'omskdev'); ?></a>
 
-	<header id="masthead">
+	<header id="masthead" class="bg-white shadow">
 		<nav id="site-navigation">
 			<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<div class="relative flex items-center justify-between h-16">

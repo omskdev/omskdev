@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="container mx-auto px-4">
+	<main id="primary" class="container relative mx-auto px-4">
 
 		<?php
 		if ( have_posts() ) :

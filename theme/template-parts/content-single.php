@@ -9,14 +9,14 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('prose prose-slate bg-white shadow rounded-xl p-10 my-10'); ?>>
 	<header>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header>
 
 	<?php omskdev_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content text-xl">
 		<?php
 		the_content();
 

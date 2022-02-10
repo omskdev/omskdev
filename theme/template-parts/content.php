@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('prose lg:prose-xl shadow-lg hover:shadow-xl duration-300 delay-150 rounded-xl p-10 mt-10'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('prose prose-slate bg-white shadow hover:shadow-xl duration-300 rounded-xl p-10 pt-5 mt-10'); ?>>
 	<header>
 		<?php
 		if ( is_singular() ) :
@@ -22,8 +22,8 @@
 			?>
 			<div>
 				<?php
-				omskdev_posted_on();
-				omskdev_posted_by();
+				//omskdev_posted_on();
+				//omskdev_posted_by();
 				?>
 			</div>
 		<?php endif; ?>
@@ -45,6 +45,6 @@
 	</div>
 
 	<footer>
-		<?php omskdev_entry_footer(); ?>
+		<?php //omskdev_entry_footer(); ?>
 	</footer>
 </article><!-- #post-<?php the_ID(); ?> -->
