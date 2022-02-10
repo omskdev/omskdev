@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('prose lg:prose-xl shadow-lg hover:shadow-xl duration-300 delay-150 rounded-xl p-10 mt-10'); ?>>
 	<header>
 		<?php
 		if ( is_singular() ) :
@@ -33,20 +33,7 @@
 
 	<div class="entry-content">
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span> "%s"</span>', 'omskdev' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+		the_excerpt();
 
 		wp_link_pages(
 			array(

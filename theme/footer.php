@@ -11,8 +11,8 @@
 
 ?>
 
-	<footer id="colophon">
-		<div>
+	<footer id="colophon" class="bg-gray-900 py-10">
+		<div class="container mx-auto px-4">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'omskdev' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */

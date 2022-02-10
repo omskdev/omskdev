@@ -11,10 +11,10 @@
 
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> lang="ru">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -22,11 +22,11 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page">
-	<a href="#primary"><?php esc_html_e( 'Skip to content', 'omskdev' ); ?></a>
+<div id="page" class="bg-gray-50">
+	<a href="#primary" class="sr-only focus:not-sr-only"><?php esc_html_e( 'Skip to content', 'omskdev' ); ?></a>
 
 	<header id="masthead">
-		<div>
+		<div class="container mx-auto px-4">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
